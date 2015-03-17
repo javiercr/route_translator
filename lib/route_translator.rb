@@ -23,7 +23,6 @@ module RouteTranslator
 
     def resolve_host_locale_config_conflicts
       @config.force_locale                        = false
-      @config.hide_locale                         = false
       @config.generate_unlocalized_routes         = false
       @config.generate_unnamed_unlocalized_routes = false
     end

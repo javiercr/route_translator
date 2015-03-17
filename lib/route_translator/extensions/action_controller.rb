@@ -11,7 +11,7 @@ module ActionController
         I18n.default_locale    = tmp_default_locale
       end
 
-      tmp_locale = params[RouteTranslator.locale_param_key] || tmp_default_locale
+      tmp_locale = tmp_default_locale || params[RouteTranslator.locale_param_key]
       if tmp_locale
         current_locale = I18n.locale
         I18n.locale    = tmp_locale
